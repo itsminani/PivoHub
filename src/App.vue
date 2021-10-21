@@ -95,7 +95,6 @@
   </div>
 </template>
 <script>
-
 AOS.init({
   once: false,
   mirror: true,
@@ -120,16 +119,23 @@ export default {
         message: "This web-app can be installed too☺ by just clicking here",
         cancelText: "Cancel",
         onAction: () => {
-          this.install()
-          this.$buefy.toast.open({
-            message: "Install by clicking here",
-          });
+          this.install();
         },
       });
     },
   },
   created() {
-    this.hasCancel();
+    window.addEventListener("beforeinstallprompt", (e) => {
+      e.preventDefault();
+      // Stash the event so it can be triggered later.
+      this.deferredPrompt = e;
+    });
+    window.addEventListener("appinstalled", () => {
+      this.deferredPrompt = null;
+    });
+    if (this.deferredPrompt){
+      this.hasCancel();
+    }
   },
   components: {
     registerForm,
