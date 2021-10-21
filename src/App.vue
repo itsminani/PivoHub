@@ -37,6 +37,13 @@
               <a @click="showLogin = true" class="button is-light">
                 Log in
               </a>
+              <a
+                @click="install()"
+                v-if="deferredPrompt"
+                class="button is-centered is-success is-rounded"
+              >
+                <i class="fas fa-download"></i> Install
+              </a>
             </div>
           </b-navbar-item>
         </template>
@@ -104,23 +111,12 @@ export default {
     return {
       showRegister: false,
       showLogin: false,
-      deferredPrompt: null
+      deferredPrompt: null,
     };
   },
   methods: {
     async install() {
       this.deferredPrompt.prompt();
-    },
-    hasCancel() {
-      this.$buefy.snackbar.open({
-        indefinite: true,
-        message: "This web-app can be installed too ☺ by just clicking here",
-        cancelText: "Cancel",
-        onAction: () => {
-          this.deferredPrompt.prompt();
-          console.log("hello")
-        },
-      });
     },
   },
   created() {
@@ -133,8 +129,7 @@ export default {
       this.deferredPrompt = null;
     });
     if (this.deferredPrompt) {
-      this.hasCancel();
-      console.log("I am Finally working")
+      console.log("I am Finally working");
     }
   },
   components: {
