@@ -23,9 +23,9 @@
               Account
             </b-navbar-item>
             <router-link to="/admin">
-            <b-navbar-item >
-              Admin Demo
-            </b-navbar-item>
+              <b-navbar-item>
+                Admin Demo
+              </b-navbar-item>
             </router-link>
           </b-navbar-dropdown>
         </template>
@@ -98,8 +98,57 @@
         </transition>
       </div>
     </div>
+    <b-navbar>
+      <template #brand>
+        <b-navbar-item tag="router-link" :to="{ path: '/' }">
+          <img class="image" alt="logo" src="./assets/logo.png" />
+        </b-navbar-item>
+      </template>
+      <template #start>
+          <b-navbar-item class="animate" href="https://github.com/itsminani/PivoHub">
+            This was made using &nbsp
+            <b-tag type="is-success"> <span class="icon">
+                  <i class="fab fa-vuejs"></i>
+                </span> Vue Js</b-tag> &nbsp
+            <b-tag type="is-warning"> <span class="icon">
+                  <i class="fab fa-aws"></i>
+                </span> AWS</b-tag> &nbsp
+            <b-tag type="is-link"> <span class="icon">
+                  <i class="fab fa-js-square"></i>
+                </span> JS & TS</b-tag> &nbsp
+            <b-tag type="is-dark"> <span class="icon"> 
+                  <i class="fab fa-github"></i>
+                </span> Github</b-tag>
+          </b-navbar-item>
+      </template>
+
+      <template #end>
+        <b-navbar-item tag="div">
+          <div class="buttons">
+            <a href="https://github.com/itsminani" class="button is-dark is-outlined">
+              <span class="icon"> 
+                  <i class="fab fa-github"></i>
+                </span><strong>My Git</strong>
+            </a>
+            <a href="https://www.linkedin.com/in/heritierlucminani/" class="button is-link">
+              <span class="icon"> 
+                  <i class="fab fa-linkedin"></i>
+                </span>My LinkedIn
+            </a>
+            <a
+              @click="install()"
+              v-if="deferredPrompt"
+              class="button is-centered is-success is-rounded"
+            >
+              <i class="fas fa-download"></i> Install
+            </a>
+          </div>
+        </b-navbar-item>
+      </template>
+    </b-navbar>
   </div>
 </template>
+
 <script>
 AOS.init({
   once: false,
@@ -132,7 +181,7 @@ export default {
     },
   },
   created() {
-    this.pause()
+    this.pause();
     window.addEventListener("beforeinstallprompt", (e) => {
       e.preventDefault();
       // Stash the event so it can be triggered later.
@@ -168,5 +217,13 @@ export default {
     font-weight: bold;
     color: #2c3e50;
   }
+}
+.animate{
+  animation-duration: 1s;
+  transition: 0.3s;
+}
+.animate:hover{
+  transform: scale(1.02);
+  transition: 0.3s;
 }
 </style>
