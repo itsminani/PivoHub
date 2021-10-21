@@ -44,6 +44,7 @@
                 <b-button
                   class="button is-primary is-rounded"
                   to="/sell"
+                  @click="showRegister = true"
                   size="is-large"
                   >Sell</b-button
                 >
@@ -419,17 +420,61 @@
         </div>
       </div>
     </section>
+    <transition
+      enter-active-class="animate__animated animate__fadeInDown"
+      leave-active-class="animate__animated animate__fadeOutUp"
+    >
+      <b-modal
+        v-model="showRegister"
+        has-modal-card
+        trap-focus
+        :destroy-on-hide="false"
+        aria-role="dialog"
+        aria-label="Example Modal"
+        aria-modal
+      >
+        <template>
+          <registerForm />
+        </template>
+      </b-modal>
+    </transition>
+    <transition
+      enter-active-class="animate__animated animate__fadeInDown"
+      leave-active-class="animate__animated animate__fadeOutUp"
+    >
+      <b-modal
+        v-model="showLogin"
+        :destroy-on-hide="false"
+        aria-role="dialog"
+        aria-label="Example Modal"
+        aria-modal
+      >
+        <template>
+          <loginForm />
+        </template>
+      </b-modal>
+    </transition>
   </div>
 </template>
 
 <script>
+import registerForm from "../components/registerForm.vue";
+import loginForm from "../components/loginForm.vue";
 import contactForm from "../components/ContactForm.vue";
 // @ is an alias to /src
 
 export default {
   name: "Home",
+  data() {
+    return {
+      showLogin: false,
+      showRegister: false
+    }
+  },
   components: {
     contactForm,
+    registerForm,
+    loginForm,
   },
 };
 </script>

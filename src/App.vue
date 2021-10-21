@@ -18,13 +18,15 @@
               About
             </b-navbar-item>
           </router-link>
-          <b-navbar-dropdown label="Info">
-            <b-navbar-item href="#">
-              About
+          <b-navbar-dropdown label="User">
+            <b-navbar-item @click="showRegister = true" href="#">
+              Account
             </b-navbar-item>
-            <b-navbar-item href="#">
-              Contact
+            <router-link to="/admin">
+            <b-navbar-item >
+              Admin Demo
             </b-navbar-item>
+            </router-link>
           </b-navbar-dropdown>
         </template>
 
@@ -118,8 +120,19 @@ export default {
     async install() {
       this.deferredPrompt.prompt();
     },
+    pause() {
+      this.$buefy.toast.open({
+        duration: 5000,
+        message: `This was developed in 24 hours, The text is <br/> just placeholder text that I found on your website.
+        <br/> The functionality doesn't work. I couldn't get time to finish`,
+        type: "is-success",
+        position: "is-bottom",
+        pauseOnHover: true,
+      });
+    },
   },
   created() {
+    this.pause()
     window.addEventListener("beforeinstallprompt", (e) => {
       e.preventDefault();
       // Stash the event so it can be triggered later.

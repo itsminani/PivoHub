@@ -1,9 +1,9 @@
 <template>
-  <div class="">
+  <div class="" style="cursor:hand;">
     <nav class="navbar is-white" fixed-top>
         <div class="navbar-brand" style="margin-top:0px">
           <a class="navbar-item brand-text" href="../index.html">
-            Bulma Admin
+            PivoHub Admin
           </a>
           <div class="navbar-burger burger" data-target="navMenu">
             <span></span>
@@ -13,19 +13,19 @@
         </div>
         <div id="navMenu" class="navbar-menu">
           <div class="navbar-start">
-            <a class="navbar-item" href="admin.html">
+            <a class="navbar-item" href="/">
               Home
             </a>
-            <a class="navbar-item" href="admin.html">
+            <a class="navbar-item" href="/">
               Orders
             </a>
-            <a class="navbar-item" href="admin.html">
+            <a class="navbar-item" href="/">
               Payments
             </a>
-            <a class="navbar-item" href="admin.html">
+            <a class="navbar-item" href="/">
               Exceptions
             </a>
-            <a class="navbar-item" href="admin.html">
+            <a class="navbar-item" href="/">
               Reports
             </a>
           </div>
@@ -78,9 +78,9 @@
         <div class="column is-9">
           <nav class="breadcrumb" aria-label="breadcrumbs">
             <ul>
-              <li><a href="../">Bulma</a></li>
-              <li><a href="../">Templates</a></li>
-              <li><a href="../">Examples</a></li>
+              <li><a href="../">Account</a></li>
+              <li><a href="../">Seller</a></li>
+              <li><a href="../">Sales</a></li>
               <li class="is-active">
                 <a href="#" aria-current="page">Admin</a>
               </li>
@@ -93,7 +93,7 @@
                   Hello, Admin.
                 </h1>
                 <h2 class="subtitle">
-                  I hope you are having a great day!
+                  I hope you are having a great day! This is just a design there is no functionality <b>Yet</b>.
                 </h2>
               </div>
             </div>
