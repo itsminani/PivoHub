@@ -114,7 +114,7 @@ export default {
     hasCancel() {
       this.$buefy.snackbar.open({
         indefinite: true,
-        message: "This web-app can be installed too☺ by just clicking here",
+        message: "This web-app can be installed too ☺ by just clicking here",
         cancelText: "Cancel",
         onAction: () => {
           this.deferredPrompt.prompt();
@@ -134,6 +134,7 @@ export default {
     });
     if (this.deferredPrompt) {
       this.hasCancel();
+      console.log("I am Finally working")
     }
   },
   components: {
