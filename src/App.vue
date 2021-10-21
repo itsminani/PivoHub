@@ -104,6 +104,7 @@ export default {
     return {
       showRegister: false,
       showLogin: false,
+      deferredPrompt: null
     };
   },
   methods: {
@@ -116,7 +117,8 @@ export default {
         message: "This web-app can be installed too☺ by just clicking here",
         cancelText: "Cancel",
         onAction: () => {
-          this.install();
+          this.deferredPrompt.prompt();
+          console.log("hello")
         },
       });
     },
