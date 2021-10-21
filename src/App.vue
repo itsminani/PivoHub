@@ -4,10 +4,7 @@
       <b-navbar spaced>
         <template #brand>
           <b-navbar-item tag="router-link" :to="{ path: '/' }">
-            <img
-              src="https://raw.githubusercontent.com/buefy/buefy/dev/static/img/buefy-logo.png"
-              alt="Lightweight UI components for Vue.js based on Bulma"
-            />
+            <img class="image" alt="logo" src="./assets/logo.png" />
           </b-navbar-item>
         </template>
         <template #start>
@@ -133,7 +130,7 @@ export default {
     window.addEventListener("appinstalled", () => {
       this.deferredPrompt = null;
     });
-    if (this.deferredPrompt){
+    if (this.deferredPrompt) {
       this.hasCancel();
     }
   },

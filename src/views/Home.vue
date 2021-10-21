@@ -408,8 +408,6 @@
         </div>
       </div>
     </section>
-
-    <img class="image" alt="Vue logo" src="../assets/logo.png" />
   </div>
 </template>
 
