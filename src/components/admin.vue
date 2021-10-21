@@ -352,7 +352,7 @@ nav.navbar {
 }
 .columns {
   width: 100%;
-  height: 100%;
+  height: 10%;
   margin-left: 0;
 }
 .menu-label {

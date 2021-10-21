@@ -135,13 +135,6 @@
                   <i class="fab fa-linkedin"></i>
                 </span>My LinkedIn
             </a>
-            <a
-              @click="install()"
-              v-if="deferredPrompt"
-              class="button is-centered is-success is-rounded"
-            >
-              <i class="fas fa-download"></i> Install
-            </a>
           </div>
         </b-navbar-item>
       </template>
