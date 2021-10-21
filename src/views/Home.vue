@@ -33,10 +33,12 @@
                   is-family-sans-serif
                 "
               >
-                We are committed to equipping you to deliver integrated,
-                value-based care now during COVID-19 and in the future.
-                Together, we are redefining care delivery in the communities we
-                collectively serve.
+                People deserve to discover the story of a human industry that
+                cares about its craft. PivoHub provides powerful and simple
+                software to create a digital ecosystem that connects, organizes,
+                and equips the craft beverage industry. We will be the
+                best-of-breed craft beverage marketplace working with the
+                world’s most notorious artisans.
               </h2>
               <div class="buttons">
                 <b-button
@@ -120,6 +122,9 @@
                 is-offset-1-fullhd
               "
             >
+              <h1 class="title titled is-1 mb-6">
+                Order management
+              </h1>
               <h2
                 class="
                   subtitled
@@ -130,14 +135,12 @@
                   is-family-sans-serif
                 "
               >
-                Never has our promise to you been more true than during
-                COVID-19. We are in this together with our clients, and
-                real-time feedback from clients has resulted in rapid
-                innovations to update our CareRecords to deliver COVID-19
-                screener questions right into our EHR systems. This rapid update
-                to systems have enabled care providers to effectively adopt CMS
-                guidelines for COVID-19 screening and generate reporting to
-                proactively inform care decisions.
+                Get discovered by thousands of retailers with an online
+                catalogue that's shows buyers exactly what they're getting.
+                Adjust pricing, hide and display products by customer, and send
+                special offers to the ones you love.Your inventory updates with
+                every order, showing your clients and distributors exactly
+                what's in stock in real time.
               </h2>
             </div>
           </div>
@@ -166,7 +169,7 @@
               "
             >
               <h1 class="title titled is-1 mb-6">
-                absurd illustrations that make sense
+                Keep everything in sync
               </h1>
               <h2
                 class="
@@ -178,9 +181,10 @@
                   is-family-sans-serif
                 "
               >
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                Laborum cupiditate dolorum vitae dolores nesciunt totam magni
-                quas.
+                Online Marketplace Showcase your products to thousands of
+                retailers. Real-Time Inventory Update your inventory
+                automatically with every order and every return. Performance
+                Dashboard Keep track of your top products and best customers.
               </h2>
             </div>
             <div
@@ -221,7 +225,9 @@
         <br />
         <br />
         <br />
-        <p data-aos="fade-down" class="title">Order anytime, anywhere... <br />Even on the 🚽😂</p>
+        <p data-aos="fade-down" class="title">
+          Order anytime, anywhere... <br />Even on the 🚽😂
+        </p>
         <br />
       </div>
     </section>
@@ -270,7 +276,7 @@
           </div>
         </div>
         <div class="column is-4">
-          <div  data-aos="fade-left" class="card is-shady">
+          <div data-aos="fade-left" class="card is-shady">
             <div class="card-image has-text-centered">
               <i class="fas fa-smile"></i>
             </div>
@@ -302,20 +308,25 @@
         </p>
       </div>
     </section>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
     <section class="container">
       <div data-aos="fade-right" class="intro column is-8 is-offset-2">
-        <b-button class="button is-primary is-rounded" to="/sell" size="is-large"
+        <b-button
+          class="button is-primary is-rounded"
+          to="/sell"
+          size="is-large"
           >Sell</b-button
         >
         <br />
         <br />
         <br />
-        <p data-aos="fade-down" class="title">Start reaching out to your customers <br>and expand.⬆</p>
+        <p data-aos="fade-down" class="title">
+          Start reaching out to your customers <br />and expand.⬆
+        </p>
         <br />
       </div>
     </section>
@@ -364,7 +375,7 @@
           </div>
         </div>
         <div class="column is-4">
-          <div  data-aos="fade-left" class="card is-shady">
+          <div data-aos="fade-left" class="card is-shady">
             <div class="card-image has-text-centered">
               <i class="fas fa-smile"></i>
             </div>
