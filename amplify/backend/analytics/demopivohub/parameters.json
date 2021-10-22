@@ -1,0 +1,21 @@
+{
+    "appName": "demopivohub",
+    "roleName": "pinpointLambdaRole07a47404",
+    "cloudformationPolicyName": "cloudformationPolicy07a47404",
+    "cloudWatchPolicyName": "cloudWatchPolicy07a47404",
+    "pinpointPolicyName": "pinpointPolicy07a47404",
+    "authPolicyName": "pinpoint_amplify_07a47404",
+    "unauthPolicyName": "pinpoint_amplify_07a47404",
+    "authRoleName": {
+        "Ref": "AuthRoleName"
+    },
+    "unauthRoleName": {
+        "Ref": "UnauthRoleName"
+    },
+    "authRoleArn": {
+        "Fn::GetAtt": [
+            "AuthRole",
+            "Arn"
+        ]
+    }
+}

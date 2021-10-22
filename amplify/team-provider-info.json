@@ -10,6 +10,11 @@
       "StackName": "amplify-demopivohub-dev-05502",
       "StackId": "arn:aws:cloudformation:us-east-2:004720906935:stack/amplify-demopivohub-dev-05502/0f67dbd0-322b-11ec-8070-02c47538ee18",
       "AmplifyAppId": "d3l38rlo1smhr9"
+    },
+    "categories": {
+      "auth": {
+        "cognito8122faf0": {}
+      }
     }
   }
 }

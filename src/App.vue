@@ -165,8 +165,8 @@ export default {
     pause() {
       this.$buefy.toast.open({
         duration: 5000,
-        message: `This was developed in 24 hours, The text is <br/> just placeholder text that I found on your website.
-        <br/> The functionality doesn't work. I couldn't get time to finish`,
+        message: `This is still <b>in development</b>, The text is <br/> just placeholder text that I found on your website.
+        <br/> The functionality doesn't work. I am Currently working on adding an <b>AWS Backend</b>`,
         type: "is-success",
         position: "is-bottom",
         pauseOnHover: true,
