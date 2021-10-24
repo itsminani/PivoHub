@@ -60,7 +60,7 @@
             </div>
             <div class="level-right">
               <small class="level-item" style="color: var(--textLight)">
-                &copy; Super Cool Website. All Rights Reserved.
+                &copy; Super Cool Website. All rights reserved.
               </small>
             </div>
           </nav>
