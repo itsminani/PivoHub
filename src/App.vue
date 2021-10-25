@@ -28,7 +28,7 @@
               </b-navbar-item>
             </router-link>
           </b-navbar-dropdown>
-        </template>
+        </template> 
 
         <template #end>
           <b-navbar-item tag="div">
@@ -148,6 +148,7 @@ AOS.init({
   mirror: true,
   duration: 600,
 });
+document.title = "PivoHub";
 import registerForm from "./components/registerForm.vue";
 import loginForm from "./components/loginForm.vue";
 export default {
